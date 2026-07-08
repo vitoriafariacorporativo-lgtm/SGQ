@@ -93,6 +93,14 @@ td{padding:11px 15px;font-size:13.5px;border-bottom:1px solid var(--bd)}tr:last-
 .dsl{font-size:11px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:.8px;margin-bottom:12px}
 @media(max-width:1024px){.sb{transform:translateX(-100%);box-shadow:none}.sb.mo{transform:translateX(0);box-shadow:4px 0 24px rgba(0,0,0,.15)}.mc,.mc.ex{margin-left:0}}
 </style>
+  <!-- CONEXÃO COM O SUPABASE -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+    const SUPABASE_URL = 'https://alfjuuiwsflyvtxdouyw.supabase.co/rest/v1/';
+    const SUPABASE_ANON_KEY = 'sb_publishable_2LgAvExBzY5mJEIuuaoy5w_AgS6G2Ch';
+    const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+</script>
+<!-- FIM DA CONEXÃO -->
 </head>
 <body>
 <div class="toc" id="toC"></div>
